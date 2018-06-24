@@ -1,111 +1,53 @@
-/*Comments from Instructor:
-================================================================
-untuk yang kelipatan khusus TIDAK USAH diprint untuk counternya,
-console log  ONLY kelipatan saja.
-console log untuk counternya di DISABLE aja
-================================================================
-
-Comment kedua after revision:
-Good job! Untuk elsenya bisa di disable jg sebenarnya, tapi keseluruhan sudah benar.
-*/
-
-// 1. Melakukan Looping Menggunakan While
-var number = 2;
+//WHILE LOOPS
 console.log("LOOPING PERTAMA");
-while(number<=20){ //Loop akan terus berjalan selama nilai number di bawah atau sama dengan 20
-    console.log(number + " - I love coding"); 
-    number+=2;
-}
-console.log("LOOPING KEDUA"); //Menampilkan judul
-
-number -=2;
-while(number>0){ 
-    console.log(number + " - I will become fullstack developer");
-    number-=2;
+var x=2;
+while(x<=20){
+  console.log(`${x} - I love coding`);
+  x+=2;
 }
 
-// 2. Melakukan Looping Menggunakan For
-console.log("LOOPING PERTAMA"); //Menampilkan judul
-for(var number = 1; number <= 20; number++){
-    console.log(number + " - I love coding"); // Menampilkan nilai number pada iterasi tertentu
-}
-console.log("LOOPING KEDUA"); //Menampilkan judul
-for(var number = 20; number > 0; number--){
-    console.log(number + " - I will become fullstack developer"); // Menampilkan nilai number pada iterasi tertentu
+console.log("LOOPING KEDUA");
+var y=20;
+while(y>=2){
+  console.log(`${y} - I will become fullstack developer`);
+  y-=2;
 }
 
-// 3. Angka Ganjil dan Genap
-// Perulangan 1 - 100 dengan pertambahan counter sebanyak 1 
-for(var counter = 1; counter <101; counter++){
-    if(counter%2 === 0){
-        console.log("GENAP");
-    } else {
-        console.log("GANJIL");
-    }
+//FOR LOOPS
+console.log("LOOPING PERTAMA");
+for(var i=1;i<21;i++){
+  console.log(`${i} - I love coding`);
+}
+console.log("LOOPING KEDUA");
+for(var j=20;j>=1;j--){
+  console.log(`${j} - I will become fullstack developer`);
 }
 
-// Tiga perulangan baru dari 1 - 100, dengan pertambahan counter sebesar 2, 5, dan 9
-for(var counter = 1; counter < 101; counter +=2){
-    if(counter%3===0){
-        console.log(counter+" KELIPATAN 3");
-    // } else {
-    //     console.log("");
-    }
+//ODDS AND EVENS
+for(var k=1;k<=100;k++){
+  if(k%2==0){
+    console.log("GENAP");
+  } else {
+    console.log("GANJIL");
+  }
 }
 
-for(var counter = 1; counter < 101; counter +=5){
-    if(counter%6===0){
-        console.log(counter+" KELIPATAN 6");
-    // } else {
-    //     console.log("");
-    }
+//KELIPATAN 3
+for(var l=1;l<=100;l+=2){
+  if(l%3===0){
+    console.log(`${l} KELIPATAN 3`);
+  }
+}
+//KELIPATAN 6
+for(var m=1;m<=100;m+=5){
+  if(m%6===0){
+    console.log(`${m} KELIPATAN 6`);
+  }
+}
+//KELIPATAN 10
+for(var n=1;n<=100;n+=9){
+  if(n%10===0){
+    console.log(`${n} KELIPATAN 10`);
+  }
 }
 
-for(var counter = 1; counter < 101; counter +=9){
-    if(counter%10 === 0){
-        console.log(counter+" KELIPATAN 10");
-    // } else {
-    //     console.log("");
-    }
-}
-
-/* ===================================================================
-First (WRONG) version, later for comparison :  
-// Perulangan 1 - 100 dengan pertambahan counter sebanyak 1 
-for(var counter = 1; counter <101; counter++){
-    console.log("counter sekarang = " + counter);
-    if(counter%2 === 0){
-        console.log("GENAP");
-    } else {
-        console.log("GANJIL");
-    }
-}
-
-// Tiga perulangan baru dari 1 - 100, dengan pertambahan counter sebesar 2, 5, dan 9
-for(var counter = 1; counter < 101; counter +=2){
-    console.log("counter sekarang = " + counter);
-    if(counter%3===0){
-        console.log(counter+" KELIPATAN 3");
-    } else {
-        console.log("");
-    }
-}
-
-for(var counter = 1; counter < 101; counter +=5){
-    console.log("counter sekarang = " + counter);
-    if(counter%6===0){
-        console.log(counter+" KELIPATAN 6");
-    } else {
-        console.log("");
-    }
-}
-
-for(var counter = 1; counter < 101; counter +=9){
-    console.log("counter sekarang = " + counter);
-    if(counter%10 === 0){
-        console.log(counter+" KELIPATAN 10");
-    } else {
-        console.log("");
-    }
-}
-=====================================================================*/
